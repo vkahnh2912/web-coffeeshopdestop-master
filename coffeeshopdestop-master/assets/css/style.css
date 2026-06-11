@@ -1,0 +1,580 @@
+/* Sử dụng boxsizing để áp dụng cho toàn bộ trang web */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-heading: "Sen", sans-serif;
+}
+/* Đổi font size sang rem 1rem=10px dễ quy đổi hơn, không bị lẻ*/
+html {
+  font-size: 62.5%;
+}
+/* khôi phục lại cỡ chữ mặc định theo rem 1rem=16px => 16px=1.6rem */
+body {
+  font-size: 1.6rem;
+  /* Nhúng font cho toàn bộ trang */
+  font-family: "Poppins", sans-serif;
+}
+/* 1.Code thuộc tính chung cho toàn bộ trang web */
+a {
+  text-decoration: none;
+}
+.heading-lv2 {
+  color: #2e2100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.27;
+  letter-spacing: -0.76px;
+}
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  line-height: 50px;
+  padding: 0px 16px;
+  color: #fffcf4;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  /* line-height: 28px; 175% */
+  /* nền */
+  border-radius: 24.5px;
+  background: #2e2100;
+}
+/* 2.Code thuộc tính cho phần header */
+.header {
+  background-color: #fffcf4;
+}
+.header .fixed {
+  top: -28px;
+}
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+.nav {
+  margin-left: auto;
+}
+.nav ul {
+  display: flex;
+}
+.nav a {
+  color: #e8dec6;
+  font-size: 1.6rem;
+  /* line-height: 28px; 175% */
+  padding: 8px 35px;
+}
+.nav a:hover {
+  color: #aba490;
+  background-color: #b08a22;
+  border-radius: 25px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  /* line-height: 28px; 175%
+   */
+  text-shadow: 0.5px 0 0;
+}
+.header .btn-sign-up {
+  min-width: 144px;
+}
+.header .action {
+  margin-left: 49px;
+}
+.header .btn-sign-up:hover {
+  background-color: #b08a22;
+  color: #e7d29d;
+}
+.header .Logo {
+  color: black;
+  text-decoration: none;
+  font-family: "Poppins", "Inter", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+/* 3.Code phần hero */
+.hero {
+  padding: 56px;
+  background-color: #fffcf4;
+}
+.hero .body {
+  display: flex;
+}
+.hero .media-block {
+  width: 48%;
+}
+/* Khối phải */
+.hero .content-block {
+  width: 52%;
+  padding-top: 64px;
+}
+.hero .media-block .img {
+  width: 470px;
+  height: 685px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.hero .heading {
+  color: #2e2100;
+  font-family: var(--font-heading);
+  font-size: 5.8rem;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: -1.16px;
+}
+.hero .desc {
+  color: #5f5b53;
+  margin-top: 22px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67;
+}
+.popular {
+  padding: 65px 0;
+  margin-top: 135px;
+}
+.popular-top .desc {
+  margin-top: 16px;
+  width: 458px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67;
+}
+/* Cách dòng chữ */
+.over {
+  line-height: 2.5rem;
+}
+.popular .course-list1 {
+  display: flex;
+  gap: 30px;
+  margin-top: 55px;
+}
+.popular .course-item {
+  border-radius: 12px;
+  border: 1px solid #e2dfda;
+  background: #fff;
+}
+.popular .course-item .thumb {
+  width: 370px;
+  height: 278px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+.popular .course-item .info {
+  padding: 16px 22px 22px;
+}
+.popular .course-item .foot,
+.popular .course-item .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popular .course-item .title {
+  color: #2e2100;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+.course-item .desc {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+.popular .course-item .price {
+  color: #2e2100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+.popular .course-item .btn-dh {
+  border: none;
+}
+.popular .course-item .btn-dh:hover {
+  background-color: #b08a22;
+}
+/* Click hiện hình bàn tay */
+.btn:hover {
+  cursor: pointer;
+}
+/* Bóng đổ cho nền */
+.popular .course-item:hover {
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 18px 36px 0 rgba(0, 0, 0, 0.05);
+}
+.popular .course-list2 {
+  display: flex;
+  gap: 30px;
+  margin-top: 15px;
+}
+.popular .course-list3 {
+  display: flex;
+  gap: 30px;
+  margin-top: 15px;
+}
+/* Tamsu */
+.Tamsu {
+  margin-top: 135px;
+  padding: 96px 0;
+  background: #fffcf4;
+  /* line-height: ; */
+}
+.tamsu-item {
+  display: flex;
+}
+.tamsu-item .avatar {
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+  border-radius: 72px;
+  background: url(<path-to-image>) lightgray -51.126px -33.052px / 228.267%
+    342.4% no-repeat;
+  object-fit: cover;
+}
+.tamsu-item .info .name {
+  color: #2e2100;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42;
+}
+.tamsu-item .info .desc {
+  color: #2e2100;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+}
+.tamsu-item .Content {
+  width: 66%;
+  margin-left: auto;
+}
+.tamsu-item blockquote {
+  color: #2e2100;
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+.love {
+  color: violet;
+}
+/* feature */
+.feature {
+  margin-top: 135px;
+  padding: 65px 0;
+}
+.feature .body {
+  display: flex;
+  justify-content: space-between;
+}
+.feature .images {
+  display: flex;
+  gap: 30px;
+}
+.feature .images img {
+  width: 270px;
+  height: 405px;
+  object-fit: cover;
+  border-radius: 16px;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+.feature .lower {
+  margin-top: 34px;
+}
+.feature .content {
+  width: 41%;
+}
+.feature .desc {
+  margin-top: 16px;
+}
+.desc0 {
+  line-height: 29px;
+}
+/* ft2 */
+.ft2 {
+  margin-top: 70px;
+}
+.ft2 .body {
+  flex-direction: row-reverse;
+}
+.ft2 .content {
+  width: 49%;
+}
+.ft2 .images img {
+  width: 470px;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 20px;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+.footer {
+  background: #2e2100;
+  padding: 96px 135px 0;
+}
+.footer .row {
+  display: flex;
+  padding-bottom: 38px;
+  border-bottom: 1px solid #59554b;
+}
+.footer .row .column {
+  width: 21.6%;
+}
+.footer .row .column:first-child {
+  width: 35%;
+}
+.footer .title {
+  padding-bottom: 14px;
+  padding-right: 48px;
+  display: inline-block;
+  border-bottom: 1px solid #59554b;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+.footer .list {
+  margin-top: 28px;
+}
+.footer .list a {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+}
+.footer.list li:last-child a {
+  margin-bottom: 0;
+}
+.footer .list strong {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86;
+}
+.footer .copyright {
+  padding: 28px 0;
+  color: #807d74;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+}
+.footer .icon {
+  margin-top: 28px;
+  padding: 5px;
+}
+.footer .Logo1 {
+  color: #fffcf4;
+  text-decoration: none;
+  font-family: "Poppins", "Inter", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #fffcf4;
+}
+
+.Logo {
+  font-weight: 1000;
+  font-style: italic;
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: #2e2100;
+}
+
+/* Thanh navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* logo trái, menu phải */
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Menu bên phải */
+.nav-buttons {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Các nút menu */
+.nav-buttons li a.btn {
+  background-color: #d2b48c;
+  color: #2e2100;
+  padding: 0 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-decoration: none;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-buttons li a.btn:hover {
+  background-color: #b08a22;
+  color: white;
+}
+
+/* Giỏ hàng */
+.cart-btn {
+  position: relative;
+}
+
+.cart-btn i {
+  font-size: 1.6rem;
+}
+
+/* Ẩn số giỏ hàng */
+.cart-count {
+  display: none;
+}
+.btn-dh {
+    background-color: #b87333; /* màu cà phê */
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-dh:hover {
+    background-color: #a05a28; /* màu đậm hơn khi hover */
+    transform: scale(1.05);
+}
+.course-item .foot {
+    display: flex;
+    justify-content: space-between; /* giá bên trái - form bên phải */
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px solid #eee; /* thêm gạch ngăn cách nhẹ cho đẹp */
+}
+
+.course-item .foot .price {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #2e2100;
+}
+
+.course-item .foot form {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* khoảng cách giữa input và button */
+}
+
+.course-item .foot input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.course-item .foot button {
+    background-color: #b87333; /* màu nâu cafe */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.course-item .foot button:hover {
+    background-color: #8b4513; /* hover màu đậm hơn */
+    transform: scale(1.05);
+}
+/* Grid cho danh sách sản phẩm */
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cột */
+  gap: 30px; /* khoảng cách giữa các sản phẩm */
+  margin-top: 40px;
+}
+
+/* Card sản phẩm */
+.course-item {
+  border-radius: 12px;
+  border: 1px solid #e2dfda;
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Ảnh sản phẩm */
+.course-item .thumb {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+/* Nội dung sản phẩm */
+.course-item .info {
+  padding: 15px;
+}
+
+/* Tên sản phẩm */
+.course-item .title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2e2100;
+}
+
+/* Mô tả */
+.course-item .desc {
+  font-size: 1.4rem;
+  color: #5f5b53;
+  margin-bottom: 12px;
+  line-height: 1.5;
+  min-height: 50px; /* cố định chiều cao để các box thẳng hàng */
+}
+
+/* Phần giá + form mua */
+.course-item .foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+/* Responsive: điện thoại thì 2 cột, nhỏ hơn nữa thì 1 cột */
+@media (max-width: 991px) {
+  .course-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .course-list {
+    grid-template-columns: 1fr;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}

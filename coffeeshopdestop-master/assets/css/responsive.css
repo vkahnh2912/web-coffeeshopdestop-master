@@ -1,0 +1,65 @@
+/* pc
+@media (min-width: 992px) {
+  .mobile-header {
+    display: none;
+  }
+}
+
+Table & mobile
+@media (max-width: 991.98px) {
+  ẩn nav
+  .headerrps .rps1 {
+    display: none;
+  }
+  Cho logo ra giữa
+  .headerrps {
+    position: relative;
+  }
+  .header__Logo {
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%;
+  }
+  Căn lại vị trí của menu icon
+  .menu-header__icon {
+    position: absolute;
+    top: 17px;
+    left: 26px;
+    color: ##2e2100;
+  }
+  overlay
+  .menu-overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    inset: 0;
+    z-index: 1;
+    ẩn lớp phủ
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  kiểm tra overlay
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: hidden;
+  }
+  Khối hero
+  .hero .body {
+    flex-direction: column;
+    row-gap: 50px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+Table
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+Mobile
+@media (max-width: 767.98px) {
+}
+.popular,
+.footer {
+  display: none;
+} */

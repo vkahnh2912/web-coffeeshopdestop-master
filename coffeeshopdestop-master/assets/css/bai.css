@@ -1,0 +1,81 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f5f0;
+}
+
+/* Khung profile */
+.profile-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Avatar */
+.profile-avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #6b4f34; /* Nâu đậm */
+}
+
+/* Tiêu đề */
+.profile-container h2 {
+    margin-bottom: 25px;
+    color: #6b4f34;
+}
+
+/* Thông tin */
+.profile-info {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.profile-info label {
+    font-weight: bold;
+    color: #6b4f34;
+}
+
+.profile-info input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.profile-info input:focus {
+    border-color: #6b4f34;
+}
+
+/* Nút hành động */
+.profile-actions .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6b4f34;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.profile-actions .btn:hover {
+    background-color: #543a25;
+}
